@@ -28,7 +28,7 @@ void drawProgressBarDemo() {
   display.drawString(64, 0, "LIGHT INTENSITY METER");
   display.setTextAlignment(TEXT_ALIGN_LEFT);
   display.drawString(0, 14, "LUX : " + String(h));
-  display.drawProgressBar(0, 32, 126, 10, h);
+  display.drawProgressBar(0, 32, 126, 10, h/2);
   
 }
 
@@ -36,5 +36,4 @@ void printDisplay(){
   display.clear();
   drawProgressBarDemo();
   display.display();
-  delay(2000);
 }
