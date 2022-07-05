@@ -20,7 +20,7 @@ void setup() {
 
 void loop() {
   printDisplay();
-  delay(200);
+  delay(60);
 }
 void drawProgressBarDemo() {
   float h = lightMeter.readLightLevel();
